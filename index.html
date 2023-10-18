@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hunt Digital Media</title>
+    <!-- linking fonts and css stylesheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<main>
+    <div class="wrapper">
+        <h1><img src="https://www.huntdigitalmedia.com/images/Logo_Sizes-04-p-500.png" alt="">&nbsp;Hunt Digital Media</h1>
+        <!--table to display data-->
+    <table id="drr-table">
+        <caption>DRR REPORT</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Start Date:</th>
+                <th>End Date:</th>
+                <th>Month and Year</th>
+                <th>Exclude Dates:</th>
+                <th>Number of Days</th>
+                <th>Lead Count:</th>
+                <th>Expected DRR</th>
+                <th>Action</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="row-1">
+                <td><input type="number"  id="id-num"class="input" name="id"></td>
+                <td><input type="date" id="start-date-1" name="start-date" class="input"></td>
+                <td><input type="date" id="end-date-1" name="end-date" class="input"></td>
+                <td id="month-year-1"></td>
+                <td><input type="text" id="exclude-dates-1" placeholder="YYYY-MM-DD" class="input" name="exclude-dates "></td>
+                <td id="num-days-1"></td>
+                <td><input type="number" id="lead-count-1" class="input" name="lead-count"></td>
+                <td id="expected-drr-1"></td>
+                <td><button onclick="calculateDRR(1)">Calculate</button></td>
+                <td><button id="button2" onclick="addRow()">Add Row</button></td>
+                
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>

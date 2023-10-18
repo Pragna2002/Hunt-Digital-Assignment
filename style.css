@@ -1,0 +1,64 @@
+html{background-color: #333333;
+}
+img{
+    width: 11%;
+}
+body{
+    color: white;
+    font-size: 1.125rem;
+    font-family: 'Mohave', sans-serif;
+}
+
+.wrapper{
+    width: min(964px,100% - 3rem);
+   /* margin-inline:auto ;*/
+   
+}
+h1{
+    margin-left: 4%;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #323232; 
+    margin-left: 32px;
+
+
+}
+th,td,caption{
+    padding: .20rem;
+}
+th{
+    text-align: left;
+}
+caption{
+    background-color: hsl(0 0% 0%);
+    font-size:1.5rem;
+    font-weight: 700;
+}
+th{
+    background-color: hsl(0 0% 0% / 0.5);
+}
+/*changing color of alternate rows*/
+tr:nth-of-type(2n){
+    background-color: hsl(0 0% 0% / .1)  ;
+}
+/* making mobile rsponsive*/
+@media(max-width:650px){
+    th{
+        display: none;
+    }
+    td{
+        display: grid;
+        padding: 0.75rem 1rem;
+    }
+    td:first-child{
+        padding: 2rem;
+    }
+    td:last-child{
+        padding: 2rem;
+    }
+  
+}
+
